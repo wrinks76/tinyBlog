@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tinyBlog</title>
 </head>
-    <header></header>
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img src="Logo.svg" alt="tinyBlog logo" />tinyBlog
+        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Calendar</a></li>
+        </ul>
+    </header>
     <main>
         <section>
             <h1>Add new entry</h1>
@@ -15,7 +23,16 @@
             <h1>Recent Posts</h1>
         </section>
         <section>
-            <h1>Here is another post, bitch.</h1>
+            <article>
+                <div>
+                    <h2>Here is another post, bitch.</h1>
+                    <time datetime="30-25-2023">May 30</time>
+                </div>
+                <p>
+                    Today I started the tinyBlog. This is my second (or third?) attempt, but I'm gonna publish this time.<br>
+                    I swear!
+                </p>
+            </article>
         </section>
     </main>
     <footer></footer>
