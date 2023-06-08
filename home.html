@@ -23,13 +23,13 @@
             </li>
         </ul>
     </header>
-    <main>
+    <main class="main">
         <section>
             <h1>Add new entry</h1>
             <form class="form" action="/entry" method="POST">
                 <p class="form__input">
                     <label for="sample-field">Sample:</label>
-                    <textarea name="content" id="entry" class="form__textarea"></textarea>
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents"></textarea>
                 </p>
                 <button type="submit" class="form__submit">Add entry, fool</button>
             </form>
@@ -38,12 +38,12 @@
             <h1>Recent Posts</h1>
         </section>
         <section>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>Here is another post, bitch.</h1>
-                    <time datetime="30-25-2023">May 30</time>
+                    <h2 class="entry__title">Here is another post, bitch.</h1>
+                    <time class="entry__date" datetime="30-25-2023">⦿ May 30</time>
                 </div>
-                <p>
+                <p class="entry__content">
                     Today I started the tinyBlog. This is my second (or third?) attempt, but I'm gonna publish this time.<br><br>
                     I swear!
                 </p>
