@@ -36,18 +36,17 @@
         </section>
         <section>
             <h1>Recent Posts</h1>
-        </section>
-        <section>
-            <article class="entry">
-                <div>
-                    <h2 class="entry__title">Here is another post, bitch.</h1>
-                    <time class="entry__date" datetime="30-25-2023">⦿ May 30</time>
-                </div>
-                <p class="entry__content">
-                    Today I started the tinyBlog. This is my second (or third?) attempt, but I'm gonna publish this time.<br><br>
-                    I swear!
-                </p>
-            </article>
+            {% for entry in entries %}
+                <article class="entry">
+                    <div>
+                        <h2 class="entry__title">{{ entry[0] | truncate(30, true) }}</h1>
+                        <time class="entry__date" datetime="{{ entry[1] }}">⦿ {{ entry[2] }}</time>
+                    </div>
+                    <p class="entry__content">
+                       {{ entry[0] }}
+                    </p>
+                </article>
+            {% endfor %}
         </section>
     </main>
     <footer class="footer">
